@@ -15,4 +15,10 @@
 	.border-primary-color {
 		border-color: rgba(53, 211, 153, 0.99);
 	}
+	.bg-second-color {
+		background-color: rgba(237, 231, 225, 1);
+	}
+	.bg-third-color {
+		background-color: rgb(49, 189, 137);
+	}
 }
