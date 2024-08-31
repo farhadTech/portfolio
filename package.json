@@ -1,0 +1,12 @@
+{
+  "name": "farhad-rahman",
+  "version": "1.0.0",
+  "description": "Here is the website link that I have cloned: [https://farhadtech.github.io/Zach-Jordan/](https://farhadtech.github.io/farhad-rahman/)\r Zach Jordan's Website Clone. Here is the main website link: https://www.zachjordan.io/",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
