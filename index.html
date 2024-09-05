@@ -19,7 +19,7 @@
 		<!-- Fixed nav bar (initially hidden) -->
 		<nav
 			id="fixed-navbar"
-			class="fixed top-0 left-0 w-full z-50 shadow-sm shadow-yellow-500 hidden transition-all duration-1000 bg-primary-color"
+			class="fixed top-0 left-0 w-full z-10 shadow-sm shadow-yellow-500 hidden transition-all duration-1000 bg-primary-color"
 		>
 			<div class="m-5 w-[68%] mx-auto">
 				<div class="lg:flex lg:justify-between lg:items-center hidden mx-auto">
@@ -123,6 +123,37 @@
 			</div>
 		</nav>
 
+		<button
+			class="fixed top-10 right-10 z-10 cursor-pointer w-[1.8rem] h-[1.8rem] bg-none"
+			id="menu-btn"
+			type="button"
+		>
+			<span
+				class="hamburger-top block bg-black absolute w-[1.4rem] h-[0.15rem] top-[5px] left-0 transition-transform"
+			></span>
+			<span
+				class="hamburger-middle block bg-black absolute w-[1.4rem] h-[0.15rem] top-[12px] left-0 transition-transform"
+			></span>
+			<span
+				class="hamburger-bottom block bg-black absolute w-[1.4rem] h-[0.15rem] top-[19px] left-0 transition-transform"
+			></span>
+		</button>
+
+		<style>
+			.open {
+				transform: rotate(90deg);
+			}
+			.open .hamburger-top {
+				transform: rotate(45deg) translateY(5px) translateX(5px);
+			}
+			.open .hamburger-middle {
+				transform: rotate(-45deg);
+			}
+			.open .hamburger-bottom {
+				display: none;
+			}
+		</style>
+
 		<!-- Hero section -->
 		<div class="w-[80%] lg:w-[60%] mx-auto">
 			<div class="w-3/4 lg:w-1/3 mx-auto mt-32">
@@ -152,7 +183,9 @@
 					Featured Work
 				</h1>
 			</div>
-			<div class="mx-10 space-y-8 lg:w-[89%] lg:mx-auto lg:x-28 lg:pb-24 lg:flex lg:space-x-10">
+			<div
+				class="mx-10 space-y-8 lg:w-[89%] lg:mx-auto lg:x-28 lg:pb-24 lg:flex lg:space-x-10"
+			>
 				<div
 					class="mt-8 lg:w-1/3 bg-primary-color rounded-2xl overflow-hidden transform transition-transform duration-500 hover:translate-y-[-8px] hover:bg-second-color"
 				>
@@ -217,7 +250,9 @@
 		<div id="projects"></div>
 		<div class="mt-20 w-[88%] mx-auto">
 			<div class="w-[70%] text-left">
-				<h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight">My Projects</h1>
+				<h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight">
+					My Projects
+				</h1>
 				<p class="mt-10 text-2xl lg:text-4xl font-extrabold">
 					I love to create things, and I'm always working on something new! You
 					can view some of my favorite projects below.
@@ -289,7 +324,6 @@
 					</a>
 				</div>
 				<div
-
 					class="lg:w-1/3 p-4 border-4 border-gray-950 rounded-lg text-center transform transition-transform duration-500 hover:translate-y-[-8px] hover:bg-second-color"
 				>
 					<a href="#">
@@ -452,7 +486,9 @@
 		<div id="extras" class="mt-24 pt-20 pb-20 w-screen bg-gray-900">
 			<div class="w-[89%] mx-auto">
 				<div class="w-[85%] text-gray-50">
-					<h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight">Extras</h1>
+					<h1 class="text-4xl lg:text-6xl font-extrabold tracking-tight">
+						Extras
+					</h1>
 					<p class="pt-8 text-2xl lg:text-4xl font-extrabold">
 						An incomplete list of some videos and writings that I've made,
 						covering a wide variety of topics. Check them out if you like!
@@ -507,9 +543,7 @@
 						<div
 							class="p-6 border-4 border-primary-color rounded-lg space-y-2 bg-primary-color hover:bg-black transform transition-transform duration-300 hover:translate-y-[-8px]"
 						>
-							<h2
-								class="text-3xl lg:text-4xl text-gray-700 font-extrabold"
-							>
+							<h2 class="text-3xl lg:text-4xl text-gray-700 font-extrabold">
 								Bringing Animal Advocacy to Millions
 							</h2>
 							<p class="text-2xl lg:text-3xl text-gray-50 font-bold italic">
@@ -524,13 +558,12 @@
 						<div
 							class="p-6 border-4 border-primary-color rounded-lg space-y-2 bg-primary-color hover:bg-black transform transition-transform duration-300 hover:translate-y-[-8px]"
 						>
-							<h2
-								class="text-3xl lg:text-4xl text-gray-700 font-extrabold"
-							>
+							<h2 class="text-3xl lg:text-4xl text-gray-700 font-extrabold">
 								Fighting Global Trauma with Effective Altruism
 							</h2>
 							<p class="text-2xl lg:text-3xl text-gray-50 font-bold italic">
-								Reflecting on our efforts to fight global trauma with effective altruism
+								Reflecting on our efforts to fight global trauma with effective
+								altruism
 							</p>
 						</div>
 					</a>
@@ -540,13 +573,12 @@
 						<div
 							class="p-6 border-4 border-primary-color rounded-lg space-y-2 bg-primary-color hover:bg-black transform transition-transform duration-300 hover:translate-y-[-8px]"
 						>
-							<h2
-								class="text-3xl lg:text-4xl text-gray-700 font-extrabold"
-							>
+							<h2 class="text-3xl lg:text-4xl text-gray-700 font-extrabold">
 								Easy EMDR is Joining the Fight Against Malaria!
 							</h2>
 							<p class="text-2xl lg:text-3xl text-gray-50 font-bold italic">
-								A blog post about our commitment to donate 10% of all profits to help fight preventabel diseases.
+								A blog post about our commitment to donate 10% of all profits to
+								help fight preventabel diseases.
 							</p>
 						</div>
 					</a>
@@ -556,13 +588,12 @@
 						<div
 							class="p-6 border-4 border-primary-color rounded-lg space-y-2 bg-primary-color hover:bg-black transform transition-transform duration-300 hover:translate-y-[-8px]"
 						>
-							<h2
-								class="text-3xl lg:text-4xl text-gray-700 font-extrabold"
-							>
+							<h2 class="text-3xl lg:text-4xl text-gray-700 font-extrabold">
 								The Importance of Universal Empathy
 							</h2>
 							<p class="text-2xl lg:text-3xl text-gray-50 font-bold italic">
-								Writing about the psychology behind disregarding others and the importance of recognizing this.
+								Writing about the psychology behind disregarding others and the
+								importance of recognizing this.
 							</p>
 						</div>
 					</a>
@@ -572,13 +603,12 @@
 						<div
 							class="p-6 border-4 border-primary-color rounded-lg space-y-2 bg-primary-color hover:bg-black transform transition-transform duration-300 hover:translate-y-[-8px]"
 						>
-							<h2
-								class="text-3xl lg:text-4xl text-gray-700 font-extrabold"
-							>
+							<h2 class="text-3xl lg:text-4xl text-gray-700 font-extrabold">
 								How Climate Change Harms the Most Marginalized Among Us
 							</h2>
 							<p class="text-2xl lg:text-3xl text-gray-50 font-bold italic">
-								An article about climate change and its impact on already disadvantages commutinities.
+								An article about climate change and its impact on already
+								disadvantages commutinities.
 							</p>
 						</div>
 					</a>
@@ -588,13 +618,12 @@
 						<div
 							class="p-6 border-4 border-primary-color rounded-lg space-y-2 bg-primary-color hover:bg-black transform transition-transform duration-300 hover:translate-y-[-8px]"
 						>
-							<h2
-								class="text-3xl lg:text-4xl text-gray-700 font-extrabold"
-							>
+							<h2 class="text-3xl lg:text-4xl text-gray-700 font-extrabold">
 								The Importance of Fossil Free Mac's Sit-In
 							</h2>
 							<p class="text-2xl lg:text-3xl text-gray-50 font-bold italic">
-								Macalester has millions invested in Fossil Fuels-something that students have resisted.
+								Macalester has millions invested in Fossil Fuels-something that
+								students have resisted.
 							</p>
 						</div>
 					</a>
@@ -607,13 +636,17 @@
 		<div class="w-screen mt-20 bg-white">
 			<div class="w-[89%] mx-auto">
 				<div>
-					<h1 class="text-4xl lg:text-6xl font-extrabold tracking tight">Media</h1>
+					<h1 class="text-4xl lg:text-6xl font-extrabold tracking tight">
+						Media
+					</h1>
 					<p class="pt-8 text-2xl lg:text-4xl font-extrabold w-[80%]">
 						I try to create projects that address social problems. Here's some
 						media that has been written about projects I've worked on.
 					</p>
 				</div>
-				<div class="mt-8 p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]">
+				<div
+					class="mt-8 p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]"
+				>
 					<h2 class="text-3xl lg:text-4xl text-primary-color font-extrabold">
 						Star Tribune Feature
 					</h2>
@@ -623,16 +656,24 @@
 				</div>
 				<div>
 					<div class="mt-8 space-y-5 lg:flex lg:space-x-5 mx-auto">
-						<div class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]">
-							<h2 class="text-3xl lg:text-4xl text-primary-color font-extrabold">
+						<div
+							class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]"
+						>
+							<h2
+								class="text-3xl lg:text-4xl text-primary-color font-extrabold"
+							>
 								Daily.co Feature
 							</h2>
 							<p class="pt-2 text-2xl text-gray-50 font-bold italic">
 								Easy EMDR transforms trauma therapy delivery with Daily.
 							</p>
 						</div>
-						<div class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]">
-							<h2 class="text-3xl lg:text-4xl text-primary-color font-extrabold">
+						<div
+							class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]"
+						>
+							<h2
+								class="text-3xl lg:text-4xl text-primary-color font-extrabold"
+							>
 								Summer at a Startup
 							</h2>
 							<p class="pt-2 text-2xl text-gray-50 font-bold italic">
@@ -641,16 +682,24 @@
 						</div>
 					</div>
 					<div class="mt-8 space-y-5 lg:flex lg:space-x-5 mx-auto">
-						<div class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]">
-							<h2 class="text-3xl lg:text-4xl text-primary-color font-extrabold">
+						<div
+							class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]"
+						>
+							<h2
+								class="text-3xl lg:text-4xl text-primary-color font-extrabold"
+							>
 								Top Rising Entrepreneur [2019]
 							</h2>
 							<p class="pt-2 text-2xl text-gray-50 font-bold italic">
 								Recognition for work on Easy EMDR
 							</p>
 						</div>
-						<div class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]">
-							<h2 class="text-3xl lg:text-4xl text-primary-color font-extrabold">
+						<div
+							class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]"
+						>
+							<h2
+								class="text-3xl lg:text-4xl text-primary-color font-extrabold"
+							>
 								Top Rising Entrepreneur [2020]
 							</h2>
 							<p class="pt-2 text-2xl text-gray-50 font-bold italic">
@@ -659,16 +708,24 @@
 						</div>
 					</div>
 					<div class="mt-8 space-y-5 lg:flex lg:space-x-5 mx-auto">
-						<div class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]">
-							<h2 class="text-3xl lg:text-4xl text-primary-color font-extrabold">
+						<div
+							class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]"
+						>
+							<h2
+								class="text-3xl lg:text-4xl text-primary-color font-extrabold"
+							>
 								Stories in Mac
 							</h2>
 							<p class="pt-2 text-2xl text-gray-50 font-bold italic">
 								Recognition for work on Easy EMDR
 							</p>
 						</div>
-						<div class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]">
-							<h2 class="text-3xl lg:text-4xl text-primary-color font-extrabold">
+						<div
+							class="lg:w-[50%] p-10 bg-gray-900 rounded-lg transform transition-transform duration-300 hover:translate-y-[-8px]"
+						>
+							<h2
+								class="text-3xl lg:text-4xl text-primary-color font-extrabold"
+							>
 								Change in Plans
 							</h2>
 							<p class="pt-2 text-2xl text-gray-50 font-bold italic">
@@ -681,7 +738,9 @@
 		</div>
 
 		<!-- footer -->
-		<div class="mt-20 pt-4 bg-gray-200 text-center transform transition-transform duration-300 hover:translate-y-[-8px]">
+		<div
+			class="mt-20 pt-4 bg-gray-200 text-center transform transition-transform duration-300 hover:translate-y-[-8px]"
+		>
 			<footer>
 				<p class="text-xl font-extrabold">
 					&copy 2024 Zachary Jordan. All rights reserved.
@@ -693,20 +752,6 @@
 				</button>
 			</footer>
 		</div>
-		<script>
-			// JavaScript to handle the scroll event and toggle the navbar
-			window.onscroll = function () {
-				var fixedNavbar = document.getElementById("fixed-navbar");
-				var scrollPosition =
-					window.pageYOffset || document.documentElement.scrollTop;
-
-				if (scrollPosition > 100) {
-					// Adjust the scroll position value as needed
-					fixedNavbar.classList.remove("hidden");
-				} else {
-					fixedNavbar.classList.add("hidden");
-				}
-			};
-		</script>
 	</body>
+	<script src="/src/script.js"></script>
 </html>
