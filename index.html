@@ -19,7 +19,7 @@
 		<!-- Fixed nav bar (initially hidden) -->
 		<nav
 			id="fixed-navbar"
-			class="fixed top-0 left-0 w-full z-10 shadow-sm shadow-yellow-500 hidden transition-all duration-1000 bg-primary-color"
+			class="sm:fixed top-0 left-0 w-full sm:z-30 shadow-sm shadow-yellow-500 hidden transition-all duration-1000 bg-primary-color"
 		>
 			<div class="m-5 w-[68%] mx-auto">
 				<div class="lg:flex lg:justify-between lg:items-center hidden mx-auto">
@@ -124,18 +124,18 @@
 		</nav>
 
 		<button
-			class="fixed top-10 right-10 z-10 cursor-pointer w-[1.8rem] h-[1.8rem] bg-none"
+			class="fixed top-10 right-10 z-50 cursor-pointer w-[2rem] h-[2rem] bg-gray-100 rounded-full sm:hidden"
 			id="menu-btn"
 			type="button"
 		>
 			<span
-				class="hamburger-top block bg-black absolute w-[1.4rem] h-[0.15rem] top-[5px] left-0 transition-transform"
+				class="hamburger-top block bg-[#af8d28] absolute w-[1.4rem] h-[0.2rem] top-[5px] left-0 transition-transform"
 			></span>
 			<span
-				class="hamburger-middle block bg-black absolute w-[1.4rem] h-[0.15rem] top-[12px] left-0 transition-transform"
+				class="hamburger-middle block bg-[#af8d28] absolute w-[1.4rem] h-[0.2rem] top-[12px] left-0 transition-transform"
 			></span>
 			<span
-				class="hamburger-bottom block bg-black absolute w-[1.4rem] h-[0.15rem] top-[19px] left-0 transition-transform"
+				class="hamburger-bottom block bg-[#af8d28] absolute w-[1.4rem] h-[0.2rem] top-[19px] left-0 transition-transform"
 			></span>
 		</button>
 
@@ -153,6 +153,47 @@
 				display: none;
 			}
 		</style>
+
+		<div
+			id="mobile-menu"
+			class="mobile-main-menu fixed pt-20 top-0 right-0 w-[22rem] h-full bg-primary-color transform transition-transform translate-x-full duration-[0.6s] ease-[cubic-bezier(0.19,1,0.22,1)] sm:hidden z-20"
+		>
+			<style>
+				.show-menu {
+					transform: translateX(0);
+				}
+			</style>
+
+			<ul class="flex flex-col items-end justify-center p-12 w-full">
+				<li
+					class="mb-4 text-lg uppercase border-dotted border-b-[0.01rem] border-[#af8d28] w-full text-right pb-1"
+				>
+					<a
+						href="#projects"
+						class="text-gray-900 font-extrabold text-2xl transition-colors duration-[0.6s] hover:text-[#af8d28]"
+						>Projects</a
+					>
+				</li>
+				<li
+					class="mb-4 text-lg uppercase border-dotted border-b-[0.01rem] border-[#af8d28] w-full text-right pb-1"
+				>
+					<a
+						href="#extras"
+						class="text-gray-900 font-extrabold text-2xl transition-colors duration-[0.6s] hover:text-[#af8d28]"
+						>Extras</a
+					>
+				</li>
+				<li
+					class="mb-4 text-lg uppercase border-dotted border-b-[0.01rem] border-[#af8d28] w-full text-right pb-1"
+				>
+					<a
+						href="#media"
+						class="text-gray-900 font-extrabold text-2xl transition-colors duration-[0.6s] hover:text-[#af8d28]"
+						>Media</a
+					>
+				</li>
+			</ul>
+		</div>
 
 		<!-- Hero section -->
 		<div class="w-[80%] lg:w-[60%] mx-auto">

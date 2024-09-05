@@ -22,3 +22,17 @@
 		background-color: rgb(49, 189, 137);
 	}
 }
+
+/* styles.css or any CSS file included in your project */
+@layer utilities {
+	.translate-x-0 {
+		transform: translateX(0);
+	}
+	.mobile-only {
+		@apply block;
+
+		@media (min-width: 640px) {
+			@apply hidden;
+		}
+	}
+}

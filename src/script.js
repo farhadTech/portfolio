@@ -1,7 +1,13 @@
-document.getElementById('menu-btn').onclick = function () {
-  this.classList.toggle('open');
-}
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+const overlay = document.getElementById('overlay');
 
+menuBtn.addEventListener('click', () => {
+  // Toggle both the button's class and the mobile menu's class
+  menuBtn.classList.toggle('open');
+  mobileMenu.classList.toggle('show-menu');
+  overlay.classList.toggle('overlay-show');
+});
 
 
 // JavaScript to handle the scroll event and toggle the navbar
